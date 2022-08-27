@@ -1,0 +1,16 @@
+name: ${project.name}
+main: wtf.choco.engarde.EngardePlugin
+version: ${project.version}
+author: Choco
+api-version: 1.13 # Still works on 1.8 servers, but this will avoid legacy support initialization
+
+commands:
+  engarde:
+    description: Engarde's main command
+    usage: /<command> [anticheats]
+    permission: engarde.command.engarde
+
+permissions:
+  engarde.command.engarde:
+    description: Grant access to the /engarde command
+    default: op
