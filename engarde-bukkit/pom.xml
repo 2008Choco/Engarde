@@ -44,12 +44,20 @@
 
   <repositories>
     <repository>
-      <id>choco-repository</id>
+      <id>choco-repository</id> <!-- Spartan -->
       <url>http://repo.choco.wtf/snapshots</url>
     </repository>
     <repository>
       <id>aac-repo</id>
       <url>https://repo.janmm14.de/repository/public</url>
+    </repository>
+    <repository>
+      <id>md_5-snapshots</id> <!-- NoCheatPlus -->
+      <url>https://repo.md-5.net/content/repositories/snapshots/</url>
+    </repository>
+    <repository>
+      <id>jitpack</id> <!-- Matrix, Grim -->
+      <url>https://jitpack.io</url>
     </repository>
   </repositories>
 
@@ -79,6 +87,24 @@
       <groupId>me.vagdedes</groupId>
       <artifactId>SpartanAPI</artifactId>
       <version>1.0-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>fr.neatmonster</groupId>
+      <artifactId>nocheatplus</artifactId>
+      <version>3.16.1-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.re-ovo</groupId>
+      <artifactId>matrix-api-repo</artifactId>
+      <version>317d4635fd</version> <!-- https://github.com/re-ovo/matrix-api-repo/commit/317d4635fd1e597136cca605eabfb721069627f7 -->
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.MWHunter</groupId>
+      <artifactId>GrimAPI</artifactId>
+      <version>bbf877d796</version> <!-- https://github.com/GrimAnticheat/GrimAPI/commit/bbf877d7962c87a3f118e01aaf82f4daf310c121 -->
       <scope>provided</scope>
     </dependency>
   </dependencies>

@@ -21,6 +21,9 @@ import org.bukkit.plugin.java.JavaPlugin;
 import wtf.choco.engarde.api.AntiCheatService;
 import wtf.choco.engarde.command.CommandEngarde;
 import wtf.choco.engarde.internal.AntiCheatServiceAdvancedAntiCheat;
+import wtf.choco.engarde.internal.AntiCheatServiceGrim;
+import wtf.choco.engarde.internal.AntiCheatServiceMatrix;
+import wtf.choco.engarde.internal.AntiCheatServiceNoCheatPlus;
 import wtf.choco.engarde.internal.AntiCheatServiceSpartan;
 import wtf.choco.engarde.listener.ServiceRegistrationListener;
 
@@ -67,6 +70,9 @@ public final class EngardePlugin extends JavaPlugin {
         // Register all default internal implementations
         this.registerServicesIfLoaded(ImmutableMap.of(
                 "AAC5", AntiCheatServiceAdvancedAntiCheat::new,
+                "GrimAC", AntiCheatServiceGrim::new,
+                "Matrix", AntiCheatServiceMatrix::new,
+                "NoCheatPlus", AntiCheatServiceNoCheatPlus::new,
                 "Spartan", AntiCheatServiceSpartan::new
         ));
     }
