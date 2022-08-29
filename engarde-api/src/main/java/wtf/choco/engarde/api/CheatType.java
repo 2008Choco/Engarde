@@ -13,7 +13,7 @@ import org.jetbrains.annotations.NotNull;
  * be referentially equal to one another. Should the need arise to compare a CheatType,
  * the use of {@link #equals(Object)} is advised where possible.
  */
-public class CheatType {
+public final class CheatType {
 
     private final String id;
     private final String name;
